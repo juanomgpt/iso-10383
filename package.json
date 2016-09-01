@@ -1,0 +1,19 @@
+{
+  "name": "iso-10383",
+  "version": "1.0.0",
+  "description": "ISO-10383",
+  "main": "index.js",
+  "scripts": {
+    "getData": "node ./lib/getData.js"
+  },
+  "keywords": [
+    "ISO-10383"
+  ],
+  "author": "Juan Garcia",
+  "license": "MIT",
+  "devDependencies": {
+    "request": "^2.74.0",
+    "request-promise-native": "^1.0.3",
+    "xlsx": "^0.8.0"
+  }
+}
