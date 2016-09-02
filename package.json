@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./scripts/build.js",
-    "lint": "./node_modules/eslint/bin/eslint.js --ext .js .",
-    "test": "./node_modules/eslint/bin/eslint.js --ext .js . && mocha ./test.js"
+    "lint": "eslint --ext .js .",
+    "test": "eslint --ext .js . && mocha ./test/test.js"
   },
   "keywords": [
     "ISO-10383",
@@ -18,10 +18,8 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.4.0",
-    "eslint-config-airbnb": "^10.0.1",
+    "eslint-config-airbnb-base": "^5.0.3",
     "eslint-plugin-import": "^1.14.0",
-    "eslint-plugin-jsx-a11y": "^2.2.1",
-    "eslint-plugin-react": "^6.2.0",
     "mocha": "^3.0.2",
     "request": "^2.74.0",
     "request-promise-native": "^1.0.3",
