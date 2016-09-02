@@ -1,3 +1,22 @@
-import {mics, data} from './index.js'
-console.log(mics) //array of mics
-console.log(data['XNYS']) //XNYS data
+const should = require('should')
+const index = require('./index')
+
+describe('iso-10383', () => {
+  describe('mics', () => {
+    it('should be an Array', () => {
+      index.mics.should.be.an.Array()
+    })
+    it('should include XNYS', () => {
+      index.mics.indexOf('XNYS').should.be.greaterThan(0)
+    })
+  })
+
+  describe('data', () => {
+    it('should be an Object', () => {
+      index.data.should.be.an.Object()
+    })
+    it('should include XNYS', () => {
+      index.data.XNYS.MIC.should.equal('XNYS')
+    })
+  })
+})

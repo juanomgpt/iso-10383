@@ -1,4 +1,4 @@
-module.exports = {
+{
   "360T": {
     "MIC": "360T",
     "COUNTRY": "GERMANY",

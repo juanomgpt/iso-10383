@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+      "jsx-a11y",
+      "import"
+  ],
+ "env": {
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "generator-star-spacing": 0,
+    "template-curly-spacing": 0,
+    "promise/param-names": 0,
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "no-unused-vars": ["error", { "varsIgnorePattern": "should" }],
+    "semi": [2, "never"],
+    "comma-dangle": 0,
+    "eol-last": 0
+  },
+}

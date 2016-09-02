@@ -1,4 +1,7 @@
+const mics = require('./lib/mics.json')
+const data = require('./lib/data.json')
+
 module.exports = {
-  mics: require('./lib/mics'),
-  data: require('./lib/data')
+  mics,
+  data
 }
